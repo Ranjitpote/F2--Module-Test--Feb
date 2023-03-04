@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #fffefe;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+h2 {
+  margin-bottom: 20px;
+}
+
+/* adding css to post */
+
+.blog-posts {
+  display: none;
+  margin: 20px;
+  color: #fff;
+  gap: 20px;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+#heading {
+  margin-bottom: 20px;
+}
+
+#blog-text {
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.blog-posts button {
+  margin-inline: 20px;
+}
+
+/* for button and time  */
+
+.blog-posts footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* The modal (background) */
+.modal {
+  display: none; /*  Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content input[type="text"],
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+}
+
+/* for post and cancel button */
+
+.modalbuttons button {
+  background-color: #fff;
+  color: #000;
+  border: 0.5px solid black;
+  /* border-radius: 5px; */
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #383737;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-content #blog-form {
+  margin-right: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

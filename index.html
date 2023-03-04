@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <h1>Blogging Website</h1>
+            <button id="create-blog-btn">Create a Blog</button>
+        </nav>
+    </header>
+
+    <div id="create-blog-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create a Blog</h2>
+            <!-- Your blog creation form goes here -->
+            <form id="blog-form">
+                <div class="form-group">
+
+                    <input type="text" id="title" name="title" placeholder="Enter Your heading...." required />
+                </div>
+                <div class="form-group">
+
+                    <textarea id="description" name="description" placeholder="Enter Your Blog Post...."
+                        required></textarea>
+                </div>
+                <div class="modalbuttons">
+                    <button id="publish-btn">Publish Post</button>
+                    <button class="cancelpost">Cancel Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="blog-posts">
+        <div class="container">
+            <h3 id="heading"> </h3>
+            <p id="blog-text"> </p>
+            <footer>
+                <div>
+                    <button class="blog-posts-button">Edit Post</button>
+                    <button class="blog-posts-button">Delete Post</button>
+                </div>
+                <div id="time-stamp">
+
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
